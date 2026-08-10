@@ -127,17 +127,7 @@ For a portfolio demonstration, use 5–10 public annual reports from 2–3 compa
 - Developed citation-aware LLM responses with source-document and page-level references and added a demo fallback for API-independent testing.
 - Designed the system for extensibility with metadata filtering, reranking, hybrid retrieval, and RAG evaluation.
 
-## Interview talking points
 
-### Why RAG instead of fine-tuning?
-
-RAG keeps knowledge outside model parameters, so documents can be updated without retraining the model. It also provides retrieved evidence that can be cited.
-
-### Why FAISS?
-
-FAISS provides efficient vector similarity search and is lightweight enough for a portfolio project.
-
-### Why chunking?
 
 Entire documents are usually too large and noisy to pass directly to an LLM. Chunking creates smaller retrieval units so the system can retrieve only the relevant evidence.
 
